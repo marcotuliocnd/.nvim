@@ -15,6 +15,7 @@ set background=dark
 set hidden
 set number
 set inccommand=split
+set relativenumber
 
 let mapleader="\<space>"
 nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<cr>
@@ -22,5 +23,7 @@ nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
 
 nnoremap <c-p> :Files<cr>
 nnoremap <c-f> :Ag<space>
+
+inoremap <silent><expr> <c-space> coc#refresh()
 
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -l -g ""'
