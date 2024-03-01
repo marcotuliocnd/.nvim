@@ -1,7 +1,7 @@
 require("mason").setup()
 
 require("mason-lspconfig").setup({
-  ensure_installed = { "tsserver" }
+  ensure_installed = { "tsserver", "eslint" }
 })
 
 local lspconfig = require('lspconfig')
