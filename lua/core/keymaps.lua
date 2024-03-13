@@ -17,4 +17,7 @@ vim.opt.colorcolumn = '120'
 
 vim.wo.number = true
 
+vim.keymap.set('n', '<C-f>', ':/')
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
+vim.keymap.set('n', '<leader>ev', ':e ~/.config/nvim<CR>')
+vim.keymap.set('n', '<leader>lv', ':source ~/.config/nvim/init.lua<CR>')
