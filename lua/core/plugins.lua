@@ -38,6 +38,18 @@ return require('packer').startup(function(use)
   use { 'junegunn/fzf', run = ":call fzf#install()" }
   use { 'junegunn/fzf.vim' }
 
+  use {
+    'VonHeikemen/fine-cmdline.nvim',
+    requires = {
+      {'MunifTanjim/nui.nvim'}
+    }
+  }
+
+  use({
+    'nvim-lua/plenary.nvim',
+    'ThePrimeagen/harpoon'
+  })
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
